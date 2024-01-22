@@ -16,7 +16,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
-    for(float x = 1; x < 5000; x++)
+    /*for(float x = 1; x < 5000; x++)
     {
         float a = ofNoise(x * 0.05) * ofGetHeight();
         float b = ofNoise(x * 0.01) * ofGetWidth();
@@ -25,7 +25,7 @@ void ofApp::draw(){
         
         ofSetColor(255);
         ofDrawCircle(randomVector2, 1);
-    }
+    }*/
 
     int gridSize = 100;
     float spacing = ofGetWidth() / float(gridSize);

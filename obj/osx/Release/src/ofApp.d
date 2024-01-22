@@ -1,6 +1,6 @@
 obj/osx/Release/src/ofApp.o: \
-  /Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/apps/myApps/mathTest/src/ofApp.cpp \
-  /Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/apps/myApps/mathTest/src/ofApp.h \
+  /Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/apps/myApps/oF_PerlinNoise/src/ofApp.cpp \
+  /Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/apps/myApps/oF_PerlinNoise/src/ofApp.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
@@ -400,7 +400,7 @@ obj/osx/Release/src/ofApp.o: \
   /Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/addons/ofxGui/src/ofxColorPicker.h \
   /Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/addons/ofxGui/src/ofxPanel.h
 
-/Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/apps/myApps/mathTest/src/ofApp.h:
+/Users/mehmetcolak/Desktop/Works/Creative_Coding/OpenFrameworks/of_v0.12.0_osx_release/apps/myApps/oF_PerlinNoise/src/ofApp.h:
 
 ../../../libs/openFrameworks/ofMain.h:
 
