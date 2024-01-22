@@ -6,6 +6,23 @@ void ofApp::setup(){
 
     gui.setup();
     gui.add(noiseScale.setup("Noise Scale", 0.01, 0.001, 0.1));
+
+    int gridSize = 800;
+
+    for(int rowIndex = 0; rowIndex < gridSize; rowIndex++) {
+        for(int columnIndex = 0; columnIndex < gridSize; columnIndex++) {
+            float noiseValue = ofNoise(rowIndex * noiseScale * 0.2, columnIndex * noiseScale * 0.2); 
+
+            perlinTable[rowIndex][columnIndex] = noiseValue;
+
+            // ofVec2f position(rowIndex * spacing, columnIndex * spacing);
+
+            // ofSetColor(noiseValue * 255);
+
+            // ofDrawRectangle(rowIndex, columnIndex, rowIndex + 2, columnIndex + 2);
+            // ofDrawCircle(position, 2); 
+        }
+    }
 }
 
 //--------------------------------------------------------------
@@ -27,16 +44,18 @@ void ofApp::draw(){
         ofDrawCircle(randomVector2, 1);
     }*/
 
-    int gridSize = 100;
+    int gridSize = 800;
     float spacing = ofGetWidth() / float(gridSize);
 
     for(int rowIndex = 0; rowIndex < gridSize; rowIndex++) {
         for(int columnIndex = 0; columnIndex < gridSize; columnIndex++) {
-            float noiseValue = ofNoise(rowIndex * noiseScale * 0.2, columnIndex * noiseScale * 0.2); 
+            // float noiseValue = ofNoidse(rowIndex * noiseScale * 0.2, columnIndex * noiseScale * 0.2); 
 
             ofVec2f position(rowIndex * spacing, columnIndex * spacing);
 
-            ofSetColor(noiseValue * 255);
+            ofSetColor(perlinTable[rowIndex][columnIndex] * 255);
+
+            // ofDrawRectangle(rowIndex, columnIndex, rowIndex + 2, columnIndex + 2);
             ofDrawCircle(position, 2); 
         }
     }

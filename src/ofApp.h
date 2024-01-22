@@ -26,4 +26,6 @@ class ofApp : public ofBaseApp{
 
 		ofxPanel gui;
         ofxFloatSlider noiseScale;
+
+		float perlinTable[800][800];
 };
