@@ -26,4 +26,5 @@ class ofApp : public ofBaseApp{
 
 		ofxPanel gui;
         ofxFloatSlider noiseScale;
+		ofxFloatSlider multiplier;
 };

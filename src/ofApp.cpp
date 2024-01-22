@@ -6,6 +6,7 @@ void ofApp::setup(){
 
     gui.setup();
     gui.add(noiseScale.setup("Noise Scale", 0.01, 0.001, 0.1));
+    gui.add(multiplier.setup("Shape Seed", 0, 0, 0.9));
 }
 
 //--------------------------------------------------------------
@@ -16,18 +17,18 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
-    /*for(float x = 1; x < 5000; x++)
+    for(float x = 1; x < 5000; x++)
     {
-        float a = ofNoise(x * 0.05) * ofGetHeight();
-        float b = ofNoise(x * 0.01) * ofGetWidth();
+        float a = ofNoise(x * 0.05 * multiplier) * ofGetHeight();
+        float b = ofNoise(x * 0.01 * multiplier) * ofGetWidth();
         
         ofVec2f randomVector2(a, b); 
         
         ofSetColor(255);
         ofDrawCircle(randomVector2, 1);
-    }*/
+    }
 
-    int gridSize = 100;
+    /*int gridSize = 300;
     float spacing = ofGetWidth() / float(gridSize);
 
     for(int rowIndex = 0; rowIndex < gridSize; rowIndex++) {
@@ -39,7 +40,7 @@ void ofApp::draw(){
             ofSetColor(noiseValue * 255);
             ofDrawCircle(position, 2); 
         }
-    }
+    }*/
 
     gui.draw();
 }
